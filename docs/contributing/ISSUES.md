@@ -1,8 +1,6 @@
 # Issues
 
 * [How to Contribute in Issues](#how-to-contribute-in-issues)
-* [Asking for General Help](#asking-for-general-help)
-* [Discussing non-technical topics](#discussing-non-technical-topics)
 * [Submitting a Bug Report](#submitting-a-bug-report)
 * [Triaging a Bug Report](#triaging-a-bug-report)
 * [Resolving a Bug Report](#resolving-a-bug-report)
@@ -13,7 +11,7 @@ For any issue, there are fundamentally three ways an individual can
 contribute:
 
 1. By opening the issue for discussion: For instance, if you believe that you
-   have uncovered a bug in Project Sample, creating a new issue in the `Call-for-Code/Project-Sample`
+   have uncovered a bug in No More Landsliddes, creating a new issue in the `SurajGudaji/No_more_Landslides`
    issue tracker is the way to report it.
 2. By helping to triage the issue: This can be done either by providing
    supporting details (a test case that demonstrates a bug), or providing
@@ -21,21 +19,11 @@ contribute:
 3. By helping to resolve the issue: Typically this is done either in the form
    of demonstrating that the issue reported is not a problem after all, or more
    often, by opening a Pull Request that changes some bit of something in
-   `Call-for-Code/Project-Sample` in a concrete and reviewable manner.
-
-## Asking for General Help
-
-The best place to ask for help is through the [Call for Code Slack workspace][]. Open an
-issue to request an invitation.
-
-## Discussing non-technical topics
-
-Discussion of non-technical topics are also best to discuss in the #general channel 
-of the [Call for Code Slack workspace][https://callforcode.org/slack].
+   `SurajGudaji/No_more_Landslides` in a concrete and reviewable manner.
 
 ## Submitting a Bug Report
 
-When opening a new issue in the `Call-for-Code/Project-Sample` issue tracker, please provide as much
+When opening a new issue in the `SurajGudaji/No_more_Landslides` issue tracker, please provide as much
 detail about your environment as possible.
 
 See [How to create a Minimal, Complete, and Verifiable example](https://stackoverflow.com/help/mcve).
@@ -65,6 +53,4 @@ In the vast majority of cases, issues are resolved by opening a Pull Request.
 The process for opening and reviewing a Pull Request isa similar to that of
 opening and triaging issues, but carries with it a necessary review and approval
 workflow that ensures that the proposed changes meet the minimal quality and
-functional guidelines of the Project Sample project.
-
-[Call for Code Slack workspace]: https://callforcode.org/slack
+functional guidelines of the No More Landslides project.

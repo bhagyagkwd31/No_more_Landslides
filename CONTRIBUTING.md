@@ -1,11 +1,9 @@
 # Contributing
 
-When contributing a major change to this repository, please first discuss the change you wish to make via an [issue](docs/contributing/ISSUES.md) or via
-[Slack in the #code-of-conduct channel](https://callforcode.org/slack). Minor issues can simply be addressed by sending by a pull request.
+When contributing a major change to this repository, please first discuss the change you wish to make via an [issue](docs/contributing/ISSUES.md). Minor issues can simply be addressed by sending by a pull request.
 
 All [pull requests](docs/contributing/PULL-REQUESTS.md) will require you to ensure the change is certified via the [Developer Certificate of Origin (DCO)](https://github.com/apps/dco/). The DCO is a lightweight way for contributors to certify that they wrote or otherwise have the right to submit the code they are contributing to the project.
 
-Please note we have a [Code of Conduct](#code-of-conduct), please follow it in all your interactions with the project and its community.
 
 ## Pull Request Process
 
@@ -14,8 +12,6 @@ Please note we have a [Code of Conduct](#code-of-conduct), please follow it in a
 3. Submit a pull request.
 4. Handle any feedback before the request is merged.
 5. Accept our sincere Thank You!
-
-## Code of Conduct
 
 ### Our Pledge
 
@@ -67,12 +63,6 @@ representative at an online or offline event. Representation of a project may be
 further defined and clarified by project maintainers.
 
 ### Enforcement
-
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team on [Slack in the #code-of-conduct channel](https://callforcode.org/slack). 
-
-All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
-
 Project maintainers who do not follow or enforce the Code of Conduct in good
 faith may face temporary or permanent repercussions as determined by other
 members of the project's leadership.

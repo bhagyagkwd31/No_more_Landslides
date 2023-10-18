@@ -77,13 +77,71 @@ Coming soon
 
 ## Additional details
 
+**Real time simulation of obtaining geological-information through sensors of area to be monitored for landslides ( Phase-2 deployment plan )**
+
+To predict the landslides for a particular region its significant to monitor the factors like temperature,humidity,weather,soil etc of
+that particular region.
+We can acheive this by planting various sensors in that region. Below we discuss how we can integrate DHT11 sensor with Aurdino to measure the humidity and temperature of the region
+
+**Components and supplies:**
+1. DHT11 Temperature and Humidity sensor
+2. Arduino UNO
+3. Breadboard
+4. Jumper wires
+
+**Apps and platforms:**
+1. Arduino IDE
+
+**Build the circuit**
+
+![circuit](https://github.com/AniruddhaNayek/No_more_Landslides/assets/99787465/671bf584-e6e8-49ed-95a9-1759dae11343)
+
+**Details about the code:**
+We need to follow these instructions to make it work: 
+1. Add the library to the Arduino IDE. 
+2. Upload the code. 
+3. When the code is uploaded, open the Serial Monitor and set the baud rate to 9600. 
+4. You will see the humidity and temperature.
+
+**Code:**
+The code for receiving the data from the DHT11 and printing it out on the serial monitor.
+
+```
+#include <dht11.h>
+#define DHT11PIN 4
+
+dht11 DHT11;
+
+void  setup()
+{
+  Serial.begin(9600);
+ 
+}
+
+void loop()
+{
+  Serial.println();
+
+  int chk = DHT11.read(DHT11PIN);
+
+  Serial.print("Humidity (%): ");
+  Serial.println((float)DHT11.humidity, 2);
+
+  Serial.print("Temperature  (C): ");
+  Serial.println((float)DHT11.temperature, 2);
+
+  delay(2000);
+
+}
+```
+
+
 ### How to run the project
 
 INSTRUCTIONS: In this section you add the instructions to run your project on your local machine for development and testing purposes. You can also add instructions on how to deploy the project in production.
 1. Deploy the application on your local system.
 2. Log into http://localhost:5000/
 3. Enter all the mandatory fields and as many of the optional fields as known.
-
 
 ### Contributing
 

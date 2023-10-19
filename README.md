@@ -160,6 +160,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 - **Ashwin Hendre** - Dummy data preprocessing, PCA, Documentation - [Ashwin-Persistent](https://github.com/Ashwin-Persistent)
 - **Bhagyashri Gaikwad** - Obtaining data, Model testing, UI
 - **Suraj Gudaji** - Model training, UI
+- **Aniruddha Nayek** - Obtaining data, Simulation of obtaining geological-information through sensors
 
 ### License
 

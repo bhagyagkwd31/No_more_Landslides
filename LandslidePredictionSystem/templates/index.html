@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<div class="form-container">
+    <h1>Landslide Severity Prediction</h1>
+    <form method="POST" action="/predict">
+        <label for="lat">Latitude<sup>*</sup></label>
+        <input type="text" id="lat" name="lat" required autocomplete="off" placeholder="e.g., 27.73"><br><br>
+
+        <label for="lon">Longitude<sup>*</sup></label>
+        <input type="text" id="lon" name="lon" required autocomplete="off" placeholder="e.g., 91.86"><br><br>
+       
+        <label for="location">Geographic location</label>
+        <select id="location" name="location">
+            <option value="above_road">Above Road</option>
+            <option value="natural_slope">Natural Slope</option>
+            <option value="below_road">Below Road</option>
+            <option value="engineered_slope">Engineered Slope</option>
+            <option value="mine">Mine</option>
+            <option value="unknown">Unknown</option>
+
+        </select><br><br>
+
+        <label for="temp">Temperature (°F)</label>
+        <input type="text" id="temp" name="temp" autocomplete="off" placeholder="e.g., 96"><br><br>
+
+        <label for="air">Air Quality (AQI)</label>
+        <input type="text" id="air" name="air" autocomplete="off" placeholder="e.g., 1006"><br><br>
+
+        <label for="humidity">Humidity (%)</label>
+        <input type="text" id="humidity" name="humidity" autocomplete="off" placeholder="e.g., 96"><br><br>
+
+        <label for="wind">Wind Speed (m/s)</label>
+        <input type="text" id="wind" name="wind" autocomplete="off" placeholder="e.g., 4"><br><br>
+
+        <label for="slope">Slope (%)</label> 
+        <input type="text" id="slope" name="slope" autocomplete="off" placeholder="e.g., 55"><br><br>
+
+        <input type="submit" value="Predict">
+ 
+    </form>
+</div>
+</body>
+</html>

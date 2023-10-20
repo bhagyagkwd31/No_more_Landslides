@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landslide Prediction - Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Landslide Prediction Result</h2>
+
+        <!-- Result Panel -->
+        <div class="result-panel">
+            <form>
+                <p><b>Predicted severity:</b> {{ prediction }}</p>
+                <p><b>Confidence:</b> {{ probability }}%</p>
+            </form>
+        </div>
+
+        <a href="/" class="button">Go Back</a>
+    </div>
+</body>
+</html>

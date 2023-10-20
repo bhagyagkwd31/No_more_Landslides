@@ -47,8 +47,6 @@ Build custom models and infuse your business with AI and machine learning
 AutoAI divided the dataset into a training and testing split. For this project 90% of the dataset was used for training the model and 10% for testing it.
 
 
-
-
 ### Solution architecture
 
 Diagram and step-by-step description of the flow of our solution:
@@ -74,7 +72,7 @@ In the future we plan to...
 
 See below for our proposed schedule on next steps after Call for Code 2023 submission.
 
-![](./docs/design/future.svg)
+![](./docs/design/roadmap.svg)
 
 ### Future data collection using sensors
 **Real time simulation of obtaining geological-information through sensors of area to be monitored for landslides ( Phase-2 deployment plan )**

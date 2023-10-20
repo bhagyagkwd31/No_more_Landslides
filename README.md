@@ -7,8 +7,6 @@
   - [How our technology solution can help](#how-our-technology-solution-can-help)
   - [Our idea](#our-idea)
 - [Technology implementation](#technology-implementation)
-  - [IBM AI service(s) used](#ibm-ai-services-used)
-  - [Other IBM technology used](#other-ibm-technology-used)
   - [Solution architecture](#solution-architecture)
 - [Presentation materials](#presentation-materials)
   - [Solution demo video](#solution-demo-video)
@@ -38,13 +36,17 @@ Landslides are a threat to the local humans and wildlife, endangering the lives 
 
 ## Technology implementation
 
-### IBM AI service(s) used
+### Required IBM services and tool
+
+- **IBM Watson Machine Learning:**- Build and train machine learning models with tools for all skill levels. Deploy and manage models at scale.
+
+- **Watson Studio**
+Build custom models and infuse your business with AI and machine learning
+
+- **watsonx.ai**  - Used AutoAI to identify key parameters and train the model and the Jupyter notebook feature to write and test code.
+AutoAI divided the dataset into a training and testing split. For this project 90% of the dataset was used for training the model and 10% for testing it.
 
 
-
-
-- [watsonx.ai](https://www.ibm.com/products/watsonx-ai) - Used AutoAI to identify key parameters and train the model and the Jupyter notebook feature to write and test code.
-AutoAI divided the dataset into a training and testing split. 90% of the dataset was used for training the model and 10% for testing it.
 
 
 ### Solution architecture
@@ -96,12 +98,26 @@ We can achieve this by planting various sensors in that region. Below we discuss
 
 ## Additional details
 
-### How to run the project
+### To run project refer below readme
+https://github.com/SurajGudaji/No_more_Landslides/blob/main/LandslidePredictionSystem/README.md
 
-INSTRUCTIONS: In this section you add the instructions to run your project on your local machine for development and testing purposes. You can also add instructions on how to deploy the project in production.
-1. Deploy the application on your local system.
-2. Log into http://localhost:5000/
-3. Enter all the mandatory fields and as many of the optional fields as known.
+## Dataset Used:-
+Dataset we used for this application are
+downloaded from the link https://www.kaggle.com/datasets/rajeshtikait/supervised-landslide-dataset/data
+
+### Model Comparisons Details
+In our application we require to use classification technique as per our dataset. So after doing analysis while Configuring AutoAI experiment we selected two algorithms to train & test pipelines out of many algorithms.
+1. **XGB Classifier**
+Accurate sure procedure that can be used for classification problems. XGBoost models are used in a variety of areas including Web search ranking and ecology.
+
+2. **Random Forest Classifier**
+Constructs multiple decision trees to produce the label that is a mode of each decision tree.
+
+After comparing different pipelines based on their accuray we deployed & used model in our application is XGB Classifier which generates 0.98 accuracy. 
+
+**snap of pipeline comparison**
+
+ ![Alt text](/LandslidePredictionSystem/snapshots/pipeline.png)
 
 
 ### Contributing
@@ -127,5 +143,7 @@ This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE)
 
 ### Acknowledgments
 
-1: https://www.britannica.com/science/landslide#/media/1/329513/209350 
-2: https://www.britannica.com/science/landslide
+1. https://www.britannica.com/science/landslide#/media/1/329513/209350 
+
+2. https://www.researchgate.net/publication/339840571_Landslide_identification_using_machine_learning
+

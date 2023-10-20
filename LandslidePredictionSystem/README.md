@@ -51,13 +51,17 @@ The Landslide Prediction System is a web application that predicts the likelihoo
 2. Enter the required parameters
    including latitude, longitude etc
 
-   Snap:-
+   **Snap:**-
    
-   ![Alt text](/snapshots/landslide_prediction.png "Optional title")
+   ![Alt text](/LandslidePredictionSystem/snapshots/landslide_prediction.png)
 
 3. Click the "Predict" button to generate predictions based on the input parameters.
 
 4. The result page will display the predicted severity and confidence level.
+   
+   **Snap:**-
+   ![Alt text](/LandslidePredictionSystem/snapshots/output_predict.png)
+
 
 
     

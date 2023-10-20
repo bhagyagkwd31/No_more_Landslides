@@ -72,7 +72,7 @@ In the future we plan to...
 
 See below for our proposed schedule on next steps after Call for Code 2023 submission.
 
-![](./docs/design/future.svg)
+![](./docs/design/roadmap.svg)
 
 ### Future data collection using sensors
 **Real time simulation of obtaining geological-information through sensors of area to be monitored for landslides ( Phase-2 deployment plan )**

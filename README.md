@@ -7,8 +7,6 @@
   - [How our technology solution can help](#how-our-technology-solution-can-help)
   - [Our idea](#our-idea)
 - [Technology implementation](#technology-implementation)
-  - [IBM AI service(s) used](#ibm-ai-services-used)
-  - [Other IBM technology used](#other-ibm-technology-used)
   - [Solution architecture](#solution-architecture)
 - [Presentation materials](#presentation-materials)
   - [Solution demo video](#solution-demo-video)
@@ -34,17 +32,21 @@ The occurrence of landslides in hilly areas of the world have resulted in the lo
 Provides a likelihood estimate of an upcoming landslide in a region
 
 ### Our idea
-Landslides are a threat to the local humans and wildlife, endangering the lives and households of a lot of people living in regions susceptible to them. It has also been observed that since landslides destroy a lot of public infrastructure, it is significantly difficult for assistance to reach the affected areas. Generally, they tend to occur in areas with a rapid population and economic growth  [2](#acknowledgments). We have obtained good quality data related to landslides over the past decade. Following that, we used AI services to identify the most important causative factors for a landslide and trained a classification model using those that implements the Random Forest algorithm. The result of this model is the likelihood of a landslide occurring in the region in the near future. We have also implemented a user-friendly and minimalistic GUI that prompts the user for these causative factors and also outputs the result. We have taken into consideration that all the factors may not be available with the user due to a lack of available recorded data and hence we only expect some of the most important ones and assume reasonable defaults for the rest. We were not able to find an existing comprehensive solution taking into account all the possible causative factors and zeroing-in on them. Our model guarantees high precision metrics as tested on the test data.
+Landslides are a threat to the local humans and wildlife, endangering the lives and households of a lot of people living in regions susceptible to them. It has also been observed that since landslides destroy a lot of public infrastructure, it is significantly difficult for assistance to reach the affected areas. Generally, they tend to occur in areas with a rapid population and economic growth  [2](#acknowledgments). We have obtained good quality data related to landslides over the past decade. Following that, we used AI services to identify the most important causative factors for a landslide and trained a classification model using XGB Classifier Algorithm. The result of this model is the likelihood of a landslide occurring in the region in the near future. We have also implemented a user-friendly and minimalistic GUI that prompts the user for these causative factors and also outputs the result. We have taken into consideration that all the factors may not be available with the user due to a lack of available recorded data and hence we only expect some of the most important ones and assume reasonable defaults for the rest. We were not able to find an existing comprehensive solution taking into account all the possible causative factors and zeroing-in on them. Our model guarantees high precision metrics as tested on the test data.
 
 ## Technology implementation
 
-### IBM AI service(s) used
+### Required IBM services and tool
+
+- **IBM Watson Machine Learning:**- Build and train machine learning models with tools for all skill levels. Deploy and manage models at scale.
+
+- **Watson Studio**
+Build custom models and infuse your business with AI and machine learning
+
+- **watsonx.ai**  - Used AutoAI to identify key parameters and train the model and the Jupyter notebook feature to write and test code.
+AutoAI divided the dataset into a training and testing split. For this project 90% of the dataset was used for training the model and 10% for testing it.
 
 
-
-
-- [watsonx.ai](https://www.ibm.com/products/watsonx-ai) - Used AutoAI to identify key parameters and train the model and the Jupyter notebook feature to write and test code.
-AutoAI divided the dataset into a training and testing split. 70% of the dataset was used for training the model and 30% for testing it.
 
 
 ### Solution architecture
@@ -96,12 +98,26 @@ We can achieve this by planting various sensors in that region. Below we discuss
 
 ## Additional details
 
-### How to run the project
+### To run project refer below readme
+https://github.com/SurajGudaji/No_more_Landslides/blob/main/LandslidePredictionSystem/README.md
 
-INSTRUCTIONS: In this section you add the instructions to run your project on your local machine for development and testing purposes. You can also add instructions on how to deploy the project in production.
-1. Deploy the application on your local system.
-2. Log into http://localhost:5000/
-3. Enter all the mandatory fields and as many of the optional fields as known.
+## Dataset Used:-
+Dataset we used for this application are
+downloaded from the link https://www.kaggle.com/datasets/rajeshtikait/supervised-landslide-dataset/data
+
+### Model Comparisons Details
+In our application we require to use classification technique as per our dataset. So after doing analysis while Configuring AutoAI experiment we selected two algorithms to train & test pipelines out of many algorithms.
+1. **XGB Classifier**
+Accurate sure procedure that can be used for classification problems. XGBoost models are used in a variety of areas including Web search ranking and ecology.
+
+2. **Random Forest Classifier**
+Constructs multiple decision trees to produce the label that is a mode of each decision tree.
+
+After comparing different pipelines based on their accuray we deployed & used model in our application is XGB Classifier which generates 0.98 accuracy. 
+
+**snap of pipeline comparison**
+
+ ![Alt text](/LandslidePredictionSystem/snapshots/pipeline.png)
 
 
 ### Contributing
@@ -116,7 +132,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 - **Aniruddha Nayek** - Exploration of real time simulators using Arduino, helping teammates.
 - **Ashwin Hendre** - Dummy data preprocessing, PCA, Documentation
-- **Bhagyashri Gaikwad** - Obtaining data, Model testing, UI
+- **Bhagyashri Gaikwad** - Obtaining & analyzing dataset,Model Build, train & Deploy using Auto AI, GUI and Testing
 - **Chandan Abhyankar** - Project ideation, Project co-ordination and mentoring
 - **Suraj Gudaji** - Model training, UI
 - **Aniruddha Nayek** - Obtaining data, Simulation of obtaining geological-information through sensors
@@ -127,5 +143,7 @@ This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE)
 
 ### Acknowledgments
 
-1: https://www.britannica.com/science/landslide#/media/1/329513/209350 
-2: https://www.britannica.com/science/landslide
+1. https://www.britannica.com/science/landslide#/media/1/329513/209350 
+
+2. https://www.researchgate.net/publication/339840571_Landslide_identification_using_machine_learning
+

@@ -34,7 +34,7 @@ The occurrence of landslides in hilly areas of the world have resulted in the lo
 Provides a likelihood estimate of an upcoming landslide in a region
 
 ### Our idea
-Landslides are a threat to the local humans and wildlife, endangering the lives and households of a lot of people living in regions susceptible to them. It has also been observed that since landslides destroy a lot of public infrastructure, it is significantly difficult for assistance to reach the affected areas. Generally, they tend to occur in areas with a rapid population and economic growth  [2](#acknowledgments). We have obtained good quality data related to landslides over the past decade. Following that, we used AI services to identify the most important causative factors for a landslide and trained a classification model using those that implements the Random Forest algorithm. The result of this model is the likelihood of a landslide occurring in the region in the near future. We have also implemented a user-friendly and minimalistic GUI that prompts the user for these causative factors and also outputs the result. We have taken into consideration that all the factors may not be available with the user due to a lack of available recorded data and hence we only expect some of the most important ones and assume reasonable defaults for the rest. We were not able to find an existing comprehensive solution taking into account all the possible causative factors and zeroing-in on them. Our model guarantees high precision metrics as tested on the test data.
+Landslides are a threat to the local humans and wildlife, endangering the lives and households of a lot of people living in regions susceptible to them. It has also been observed that since landslides destroy a lot of public infrastructure, it is significantly difficult for assistance to reach the affected areas. Generally, they tend to occur in areas with a rapid population and economic growth  [2](#acknowledgments). We have obtained good quality data related to landslides over the past decade. Following that, we used AI services to identify the most important causative factors for a landslide and trained a classification model using XGB Classifier Algorithm. The result of this model is the likelihood of a landslide occurring in the region in the near future. We have also implemented a user-friendly and minimalistic GUI that prompts the user for these causative factors and also outputs the result. We have taken into consideration that all the factors may not be available with the user due to a lack of available recorded data and hence we only expect some of the most important ones and assume reasonable defaults for the rest. We were not able to find an existing comprehensive solution taking into account all the possible causative factors and zeroing-in on them. Our model guarantees high precision metrics as tested on the test data.
 
 ## Technology implementation
 
@@ -44,7 +44,7 @@ Landslides are a threat to the local humans and wildlife, endangering the lives 
 
 
 - [watsonx.ai](https://www.ibm.com/products/watsonx-ai) - Used AutoAI to identify key parameters and train the model and the Jupyter notebook feature to write and test code.
-AutoAI divided the dataset into a training and testing split. 70% of the dataset was used for training the model and 30% for testing it.
+AutoAI divided the dataset into a training and testing split. 90% of the dataset was used for training the model and 10% for testing it.
 
 
 ### Solution architecture
@@ -116,7 +116,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 - **Aniruddha Nayek** - Exploration of real time simulators using Arduino, helping teammates.
 - **Ashwin Hendre** - Dummy data preprocessing, PCA, Documentation
-- **Bhagyashri Gaikwad** - Obtaining data, Model testing, UI
+- **Bhagyashri Gaikwad** - Obtaining & analyzing dataset,Model Build, train & Deploy using Auto AI, GUI and Testing
 - **Chandan Abhyankar** - Project ideation, Project co-ordination and mentoring
 - **Suraj Gudaji** - Model training, UI
 - **Aniruddha Nayek** - Obtaining data, Simulation of obtaining geological-information through sensors
